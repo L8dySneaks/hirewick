@@ -1,0 +1,87 @@
+/*
+Theme Name: Astrid Child Theme
+Template: astrid
+*/
+
+@import url("../astrid/style.css");
+
+
+.header-info {
+	display: none;
+}
+
+.header-image::after {
+	background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+## Testimonials
+--------------------------------------------------------------*/
+.testimonial-content {
+  overflow: hidden;
+}
+
+.testimonial-content:hover {
+  cursor: pointer;
+}
+
+.testimonial-dl {
+  position:absolute;
+  top:100%;
+  left: 0;
+  width:100%;
+  transition: transform 250ms;
+  vertical-align: bottom;
+}
+.testimonial-dl a {
+  display:block;
+  margin:0;
+  color: #fff;
+  background-color: rgba(115,115,115, .8);
+}
+
+.testimonial-content:hover .testimonial-dl {
+  transform:translateY(-100%);
+}
+
+
+.testimonial svg {
+	display: none;
+}
+
+.testimonial-thumb {
+	display: none;
+}
+
+.testimonial .hide {
+  display: none;
+}
+
+
+.testimonial-title {
+  font-size: 16px;
+  float: right;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+.site-copyright {
+  width: 75%;
+}
+.social-menu-widget a {
+  background-color: #656D6D;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.mobile-nav,
+	.btn-menu {
+		display: none;
+	}
+
+  .atframework_testimonials_widget {
+    padding-top: 50px !important;
+  }
+}
