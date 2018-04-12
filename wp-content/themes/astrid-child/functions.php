@@ -4,7 +4,7 @@
 * Footer credits
 */
 function astrid_child_footer_credits() {
-	echo '<span class="sep"> &copy; 2018 Jared Wickham | Developed by: <a href="http://stephsymosko.com">Stephanie Symosko</a> </span>';
+	echo '<span class="sep"> &copy; 2018 Jared Wickerham | Developed by: <a href="http://stephsymosko.com">Stephanie Symosko</a> </span>';
 }
 add_action( 'astrid_child_footer', 'astrid_child_footer_credits' );
 
