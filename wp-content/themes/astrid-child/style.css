@@ -7,17 +7,35 @@ Template: astrid
 
 
 .header-info {
-	display: none;
+	/* display: none; */
 }
 
 .header-image::after {
 	background-color: transparent;
 }
 
+.header-button {
+	margin: 335px auto 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent !important;
+  border-right: 20px solid transparent !important;
+  border-top: 20px solid #fcd088 !important;
+	border-bottom: 0px;
+	padding: 0;
+}
+
+.header-button:hover {
+	background-color: transparent !important;
+	border-top: 20px solid #fcd088 !important;
+	opacity: .5;
+}
+
 /*--------------------------------------------------------------
 ## Testimonials
 --------------------------------------------------------------*/
 .testimonial-content {
+	min-height: 300px;
   overflow: hidden;
 }
 
@@ -34,10 +52,21 @@ Template: astrid
   vertical-align: bottom;
 }
 .testimonial-dl a {
-  display:block;
-  margin:0;
+  display: block;
+  margin: 0;
+	padding-left: 90px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-weight: 900;
+	font-size: 20px;
   color: #fff;
   background-color: rgba(115,115,115, .8);
+	text-transform: uppercase;
+}
+
+.testimonial-dl a:hover {
+	color: #fcd088;
+  text-decoration: none;
 }
 
 .testimonial-content:hover .testimonial-dl {
@@ -59,7 +88,7 @@ Template: astrid
 
 
 .testimonial-title {
-  font-size: 16px;
+  font-size: 13px !important;
   float: right;
 }
 
@@ -74,6 +103,11 @@ Template: astrid
   background-color: #656D6D;
 }
 
+@media only screen and (max-width: 500px) {
+
+
+}
+
 
 @media only screen and (max-width: 1024px) {
 	.mobile-nav,
@@ -84,4 +118,8 @@ Template: astrid
   .atframework_testimonials_widget {
     padding-top: 50px !important;
   }
+
+	.testimonial-content {
+		min-height: 175px;
+	}
 }

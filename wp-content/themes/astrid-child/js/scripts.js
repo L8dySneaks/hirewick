@@ -13,3 +13,11 @@ jQuery(function($) {
 
 
 });
+
+
+/*** Second header button ***/
+// jQuery(function($) {
+//    var myButton = '<a href="http://example.org" class="button header-button" style="margin-left:5px;">My Button</a>';
+//    $( '.header-info .container' ).append(myButton);
+//    $( '.header-info .container a' ).css('display', 'inline-block');
+// });
